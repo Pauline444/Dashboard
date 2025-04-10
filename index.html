@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="sv">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap" rel="stylesheet">
+        <title>Personlig Dashboard</title>
+    </head>
+    <body>
+        <header>
+            <div class="time-date-card">
+                <div class="time-date" id="clock">
+
+                </div>
+                <div class="time-date" id="date">
+                    
+                </div>
+            </div>
+            <div class="title">
+                <div class="editable-title">
+                    <h1 class="editable-title">Min Dashboard</h1>
+                </div>
+            </div>
+        </header>
+        <section>
+            <div class="dashboard">
+                <div class="card">
+                    <div class="saved-links">
+                        <h2>Snabblänkar</h2>
+                    </div>
+                    <div class="add-links">
+                        <input type="url" class="links" id="linkUrl" placeholder="URL"><br>
+                        <button class="add-btn" id="addLinkBtn">Lägg till länk</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="weather">
+                        
+                    </div>
+                    <div class="loader">Laddar väderdata...</div>
+                </div>
+                <div class="card">
+                    <div class="api">
+                        <h2>Valfri API</h2>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="add-notes">
+                        <h2>Anteckningar</h2>
+                        <textarea class="notes-area" id="notes" placeholder="Skriv din text här"></textarea><br>
+                        <button class="add-btn" id="addNotesBtn">Lägg till text</button>
+                    </div>
+                    <div class="saved-notes">
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="footer-card">
+                <div class="new-background" id="newBackground">
+                    <h2>Slumpa ny bakgrund</h2>
+                </div>
+            </div>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>
