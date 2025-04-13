@@ -1,7 +1,10 @@
+'use strict';
+
+
 // TID OCH DATUM
 
 function startTime() {
-    const now = new Date();
+    let now = new Date();
     //PadStart lägger till en nolla och gör det till tvåsiffrigt
     const day = `${now.getDate()}`.padStart(2, 0);
     const month = `${now.getMonth() + 1}`.padStart(2, 0);
